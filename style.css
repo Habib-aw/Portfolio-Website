@@ -1,5 +1,9 @@
+:root{
+    --beige:#cdb891;
+    --brown:rgb(34, 16, 0);
+}
 body{
-    background: #cdb891;
+    background: var(--beige);
     text-align: center;
     margin: 0;
 }
@@ -12,6 +16,9 @@ body{
     font-size: 2.5em;
 }
 #title{
-    color: #cdb891;
-    background: #000;
+    color: var(--beige);
+    background: var(--brown);
+}
+.fg-brown{
+    color: var(--brown);
 }
