@@ -4,26 +4,54 @@
   --primary: hsl(var(--hue-color), 30%, 8%);
   --secondary: hsl(var(--hue-color), 30%, 8%);
   --text-highlight: hsl(var(--hue-color), 69%, 61%);
+  scroll-behavior: smooth;
 }
 h1 {
   color: var(--text-highlight);
-  font-size: 15rem;
+  font-size: 10em;
 }
 h2 {
-  font-size: 10rem;
+  font-size: 6rem;
   color: var(--text);
 }
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+p {
+  color: var(--text);
+  font-size: 1.5rem;
+}
+.logo {
+  width: 75px;
+  height: 75px;
+}
+
+#about {
+  padding-top: 2rem;
+  display: flex;
+  width: 55%;
+  margin: auto;
+}
 #logo {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
 }
 .nav {
   display: flex;
 }
 .nav a {
-  margin-right: 2rem;
+  margin-right: 2em;
   text-decoration: none;
   color: var(--text);
+}
+.nav a:hover {
+  color: var(--text-highlight);
+  /* text-decoration: underline;
+  text-decoration-thickness: 3; */
 }
 
 .nav-bar {
@@ -31,6 +59,7 @@ h2 {
   justify-content: space-between;
   color: var(--text);
   background: var(--secondary);
+  position: sticky;
 }
 body {
   background: var(--primary);
