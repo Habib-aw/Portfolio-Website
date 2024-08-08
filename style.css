@@ -5,9 +5,10 @@
   --secondary: hsl(var(--hue-color), 30%, 8%);
   --text-highlight: hsl(var(--hue-color), 69%, 61%);
   scroll-behavior: smooth;
-}
-.name-logo {
-  fill: var(--text);
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 h1 {
@@ -75,16 +76,25 @@ p {
 }
 
 #about {
-  padding-top: 2rem;
+  padding-top: 75px;
   display: flex;
   width: 55%;
   margin: auto;
 }
-#logo {
+.logo-haw {
   width: 100px;
   height: 100px;
   margin-left: 1rem;
   margin-top: 0.5rem;
+  fill: var(--text);
+  transition: ease 2s;
+}
+.name-logo {
+  width: 50px;
+  height: 50px;
+}
+.nav-scroll {
+  box-shadow: 0 4px 8px var(--text-highlight);
 }
 
 .nav {
@@ -107,7 +117,12 @@ p {
   color: var(--text);
   background: var(--secondary);
   position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensures the navbar stays above other content */
+  transition: box-shadow 0.5s ease;
+  transition-delay: 1s;
 }
+
 body {
   background: var(--primary);
 }
@@ -180,4 +195,12 @@ button {
 
 button:hover {
   background-color: #8a2be2;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: var(
+    --text-highlight
+  ); /* Change this color to whatever you prefer */
+  outline: none; /* Removes the default blue outline */
 }

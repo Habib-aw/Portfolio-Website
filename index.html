@@ -10,14 +10,14 @@
     <link rel="icon" href="Images/logo.svg" />
   </head>
   <body>
+    <script src="script.js"></script>
     <div class="nav-bar">
-      <div id="logo">
+      <div class="logo-haw">
         <svg
           version="1.0"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 150.000000 150.000000"
           preserveAspectRatio="xMidYMid meet"
-          class="name-logo"
         >
           <g
             transform="translate(0.000000,150.000000) scale(0.100000,-0.100000)"
@@ -45,7 +45,7 @@ m505 -9 c-41 -145 -77 -266 -81 -270 -3 -3 -4 3 -1 14 4 11 36 126 72 255 80
         </svg>
       </div>
       <ul role="not-list" class="nav">
-        <li><a href="">Home</a></li>
+        <li><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="/projects.html">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -165,7 +165,12 @@ m505 -9 c-41 -145 -77 -266 -81 -270 -3 -3 -4 3 -1 14 4 11 36 126 72 255 80
         </div>
         <div class="form-container">
           <form action="#">
-            <input type="text" placeholder="Your Name" required />
+            <input
+              type="text"
+              placeholder="Your Name"
+              required
+              autocomplete="name"
+            />
             <input type="email" placeholder="Email Address" required />
             <textarea placeholder="Message" required></textarea>
 
