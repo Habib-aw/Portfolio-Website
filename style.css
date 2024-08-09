@@ -10,6 +10,9 @@
   -moz-user-select: none;
   -ms-user-select: none;
 }
+body {
+  background: var(--primary);
+}
 
 h1 {
   color: var(--text);
@@ -26,49 +29,19 @@ h3 {
 .text-highlight {
   color: var(--text-highlight);
 }
-.contact-icons {
-  width: 25px;
-  height: 25px;
-  fill: var(--text);
-}
-.contact-icons:hover {
-  fill: var(--text-highlight);
-  cursor: pointer;
-  transition: ease-in 0.4s;
-}
-.contact-logo {
-  width: 100px;
-  height: 100px;
-  margin: auto;
-}
-.contact-content {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.contact-actions {
-  display: flex;
-  justify-content: space-evenly;
-  border-width: 1px;
-  border-color: var(--text);
-  border-style: solid;
-  padding-block: 10px;
-  border-radius: 10px;
-  width: 50%;
-  margin-inline: auto;
-  margin-block: 10px;
-}
 
-#contact {
-  text-align: center;
-  height: 95vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
 p {
   color: var(--text);
   font-size: 1.5rem;
+}
+
+.panel {
+  text-align: left;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .logo {
   width: 75px;
@@ -123,22 +96,46 @@ p {
   transition-delay: 1s;
 }
 
-body {
-  background: var(--primary);
+/* Contact Section*/
+.contact-icons {
+  width: 25px;
+  height: 25px;
+  fill: var(--text);
 }
-.panel {
-  text-align: left;
+.contact-icons:hover {
+  fill: var(--text-highlight);
+  cursor: pointer;
+  transition: ease-in 0.4s;
+}
+.contact-logo {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+.contact-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contact-actions {
+  display: flex;
+  justify-content: space-evenly;
+  border-width: 1px;
+  border-color: var(--text);
+  border-style: solid;
+  padding-block: 10px;
+  border-radius: 10px;
+  width: 50%;
+  margin-inline: auto;
+  margin-block: 10px;
+}
+
+#contact {
+  text-align: center;
   height: 95vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-@media screen and (max-width: 480px) {
-  .nav {
-    display: none;
-  }
+  justify-content: space-evenly;
 }
 
 .form-container {
@@ -173,16 +170,6 @@ textarea {
   height: 100px;
 }
 
-.checkbox-container {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-input[type="checkbox"] {
-  margin-right: 10px;
-}
-
 button {
   background-color: var(--text-highlight);
   color: var(--text);
@@ -202,6 +189,18 @@ textarea:focus {
   border-color: var(--text-highlight);
   outline: none;
 }
+form {
+  margin-bottom: 0;
+}
+.form-input-container {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  justify-content: space-around;
+  margin-bottom: 2.5rem;
+}
+
+/* Education section */
 .timeline {
   position: relative;
   max-width: 60%;
@@ -287,4 +286,11 @@ textarea:focus {
 }
 .study-place {
   margin-bottom: 15px;
+}
+
+/* Resize section*/
+@media screen and (max-width: 1024px) {
+  .nav {
+    display: none;
+  }
 }
