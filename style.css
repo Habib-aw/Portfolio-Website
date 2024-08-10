@@ -34,7 +34,9 @@ p {
   color: var(--text);
   font-size: 1.5rem;
 }
-
+.potrait {
+  height: 700px;
+}
 .panel {
   text-align: left;
   height: 95vh;
@@ -51,7 +53,7 @@ p {
 #about {
   padding-top: 75px;
   display: flex;
-  width: 55%;
+  max-width: 920px;
   margin: auto;
 }
 .logo-haw {
@@ -203,7 +205,7 @@ form {
 /* Education section */
 .timeline {
   position: relative;
-  max-width: 60%;
+  max-width: 920px;
   margin: 50px auto;
   padding: 40px 0;
 }
@@ -287,10 +289,59 @@ form {
 .study-place {
   margin-bottom: 15px;
 }
-
+.potrait-small {
+  height: 300px;
+  display: none;
+}
 /* Resize section*/
 @media screen and (max-width: 1024px) {
   .nav {
     display: none;
+  }
+  .contact-content {
+    flex-direction: column-reverse;
+  }
+  h1 {
+    font-size: 12vw;
+  }
+  h3 {
+    font-size: 4vw;
+  }
+  h2 {
+    font-size: 10vw;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .potrait {
+    display: none;
+  }
+  .potrait-small {
+    display: block;
+    float: right;
+  }
+  /* .about-txt-img {
+    float: left;
+  } */
+  .contact-content {
+    margin-inline: 3rem;
+  }
+
+  #about {
+    width: 70%;
+  }
+  .timeline-item {
+    width: 90%;
+  }
+  .timeline::before {
+    left: 10%;
+  }
+  .timeline-item.left,
+  .timeline-item.right {
+    left: 10%;
+    text-align: left;
+  }
+  .timeline-item.left::after {
+    left: -6px;
   }
 }
