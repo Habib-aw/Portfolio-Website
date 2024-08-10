@@ -328,7 +328,10 @@ form {
   }
 
   #about {
-    width: 70%;
+    width: 85%;
+  }
+  .about-title h2 {
+    text-align: center;
   }
   .timeline-item {
     width: 90%;
