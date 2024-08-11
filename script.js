@@ -1,19 +1,20 @@
 document.addEventListener("scroll", function () {
-  const logo = document.querySelector(".logo-haw");
-  const navBar = document.querySelector(".nav-bar");
-  if (window.scrollY > 0) {
-    logo.classList.add("name-logo");
-    navBar.classList.add("nav-scroll");
+  const top = document.querySelector(".to-top");
+  if (window.scrollY > 200) {
+    top.style.display = "block";
   } else {
-    navBar.classList.remove("nav-scroll");
-    logo.classList.remove("name-logo");
+    top.style.display = "none";
   }
 });
 function myFunction() {
-  var x = document.getElementById("nav");
+  var x = document.querySelector(".nav");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
     x.style.display = "block";
   }
 }
+const btn = document.querySelector(".to-top");
+btn.addEventListener("click", () => {
+  document.documentElement.scrollTo({ top: 0, behavior: "smooth" });
+});
