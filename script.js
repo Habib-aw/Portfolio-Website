@@ -1,9 +1,9 @@
-var x = document.querySelector(".nav");
+var sidebar = document.querySelector(".sidebar");
 function myFunction() {
-  if (x.style.display === "flex") {
-    x.style.display = "none";
+  if (sidebar.style.display === "none" || sidebar.style.display === "") {
+    sidebar.style.display = "flex";
   } else {
-    x.style.display = "flex";
+    sidebar.style.display = "none";
   }
 }
 
@@ -15,6 +15,11 @@ window.addEventListener("scroll", () => {
     btn.style.display = "flex";
   } else {
     btn.style.display = "none";
+  }
+});
+window.addEventListener("resize", () => {
+  if (window.screenX >= 1024) {
+    x.style.display = "flex";
   }
 });
 
