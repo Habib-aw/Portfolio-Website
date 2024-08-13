@@ -31,6 +31,14 @@ sidebar.querySelectorAll("a").forEach((link) => {
   link.addEventListener("click", closeSidebar);
 });
 
+// Close the sidebar when the window is resized
+window.addEventListener("resize", function () {
+  // If the sidebar is open and the window is resized, close it
+  if (sidebar.style.display === "flex") {
+    closeSidebar();
+  }
+});
+
 const btn = document.querySelector(".to-top");
 
 // Show the button when scrolling down
