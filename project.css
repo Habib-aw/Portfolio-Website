@@ -1,0 +1,30 @@
+.title-repo {
+  display: flex;
+  justify-content: flex-end;
+  /* flex: end; */
+}
+.title-repo div {
+  display: flex;
+  /* margin-left: auto; */
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  color: var(--text);
+  font-size: 1.5rem;
+}
+
+.github-icon {
+  width: 50px;
+}
+.project-title {
+  margin-right: auto;
+}
+.tech-used-icons {
+  display: flex;
+}
+.sumary-section,
+.details-section {
+  margin-block: 1rem;
+}
