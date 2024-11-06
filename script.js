@@ -39,6 +39,24 @@ window.addEventListener("resize", function () {
   }
 });
 
+function copyEmail() {
+  const tooltip = document.querySelector(".email-copied");
+  navigator.clipboard.writeText("habib.awahid01@gmail.com");
+  tooltip.style.visibility = "visible";
+
+  setTimeout(() => {
+    tooltip.style.visibility = "hidden";
+  }, 3000);
+}
+function copyGitAccount() {
+  const tooltip = document.querySelector(".git-copied");
+  navigator.clipboard.writeText("https://www.github.com/Habib-aw");
+  tooltip.style.visibility = "visible";
+
+  setTimeout(() => {
+    tooltip.style.visibility = "hidden";
+  }, 3000); 
+
 const btn = document.querySelector(".to-top");
 
 // Show the button when scrolling down
