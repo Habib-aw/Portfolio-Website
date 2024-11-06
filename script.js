@@ -55,7 +55,8 @@ function copyGitAccount() {
 
   setTimeout(() => {
     tooltip.style.visibility = "hidden";
-  }, 3000); 
+  }, 3000);
+}
 
 const btn = document.querySelector(".to-top");
 
