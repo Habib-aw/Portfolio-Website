@@ -349,7 +349,8 @@ form {
   align-items: flex-start;
   justify-content: start;
   margin-top: 0;
-  display: none;
+  transform: translateX(100%); /* Initially off-screen */
+  transition: transform 0.3s ease-in-out; /* Animation duration and easing */
 }
 .sidebar li,
 .sidebar a {
@@ -358,6 +359,10 @@ form {
   color: white;
   text-align: left;
   padding: 1rem;
+}
+.sidebar.open {
+  transform: translateX(0); /* Slide in */
+  right: 0;
 }
 .hamburger-menu {
   display: none;

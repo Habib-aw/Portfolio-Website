@@ -2,8 +2,8 @@ var sidebar = document.querySelector(".sidebar");
 var body = document.body;
 
 function myFunction() {
-  if (sidebar.style.display === "none" || sidebar.style.display === "") {
-    sidebar.style.display = "flex";
+  if (!sidebar.classList.contains("open")) {
+    sidebar.classList.add("open");
     body.style.overflow = "hidden"; // Prevent scrolling
     document.addEventListener("click", outsideClickListener);
   } else {
@@ -12,7 +12,7 @@ function myFunction() {
 }
 
 function closeSidebar() {
-  sidebar.style.display = "none";
+  sidebar.classList.remove("open");
   body.style.overflow = "auto"; // Allow scrolling
   document.removeEventListener("click", outsideClickListener);
 }
@@ -33,8 +33,7 @@ sidebar.querySelectorAll("a").forEach((link) => {
 
 // Close the sidebar when the window is resized
 window.addEventListener("resize", function () {
-  // If the sidebar is open and the window is resized, close it
-  if (sidebar.style.display === "flex") {
+  if (sidebar.classList.contains("open")) {
     closeSidebar();
   }
 });
