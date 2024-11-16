@@ -1,0 +1,51 @@
+[
+  {
+    "title": "Digital signage for local Mosque",
+    "repoLink": "https://github.com/Habib-aw/masjid_dashboard",
+    "startDate": "November 2021",
+    "summary": "The project is a digital signage system designed for Mosques, allowing for efficient and easy information communication. Previously, the Mosque staff would have to tediously change the prayer times manually on a clock. Now, this is automatically achieved through the system. As well as displaying prayer times, the system is able to communicate more information such as upcoming events or announcements and display donation details enabling attendees to donate. The project aims in keeping the Mosque more organised and gives it the ability to focus on other, less tedious and important tasks. This project is a personal project and is currently running in my local Mosque and actively used by the local Muslim Community.",
+    "technologies": [
+      { "icon": "python.svg", "name": "Python" },
+      { "icon": "pi.svg", "name": "Raspberry Pi" }
+    ],
+    "details": "masjid_dashboard.png"
+  },
+  {
+    "title": "Website for local Mosque",
+    "repoLink": "https://github.com/Habib-aw/bma-website",
+    "startDate": "May 2022",
+    "summary": "The projects aims to provide information to the Muslim community through the comfort of their homes. The website allows the Mosque staff to communicate information to the community enabling them to have upto date information about the Mosque. This information can include prayer times calendar, donation details, Mosque events, Mosque classes, the history of the Mosque and future plans, how to contact them and more. This website is a personal project and is currently being used by my local Mosque.",
+    "technologies": [
+      { "icon": "react.svg", "name": "React JS" },
+      { "icon": "css.svg", "name": "CSS" }
+    ],
+    "details": "website.png"
+  },
+  {
+    "title": "App for local Mosque",
+    "repoLink": "https://github.com/Habib-aw/BmaApp",
+    "startDate": "November 2022",
+    "summary": "This project aims to provide information to Mosque attendees through an app. Unlike a website, the app is intended to be offline first enabling attendees to view prayer times even when there is no or weak internet connection. The app also aids by alerting users when it is close to prayer time, leaving adjustements to users allowing them to know in advance when it is prayer times. The app also has a donation and contact section enabling attendees to help and commmunicate with the Mosque. This app is a personal project and is currently being used by my local Mosque.",
+    "technologies": [{ "icon": "react.svg", "name": "React Native" }],
+    "details": "app.png"
+  },
+  {
+    "title": "Dashboard for house",
+    "repoLink": "https://github.com/Habib-aw/Home-dashboard",
+    "startDate": "June 2023",
+    "summary": "The project aims to replicate a digital signage system typically used in advertising. Instead of displaying ads, it intends to be used as an household information communication system. In simple terms its an information board used at home. The information displayed include prayer times, weather updates, date, time and notes. This is a personal project which is being used at home and relatives homes providing valuable information to my family and me.",
+    "technologies": [
+      { "icon": "python.svg", "name": "Python" },
+      { "icon": "pi.svg", "name": "Raspberry Pi" }
+    ],
+    "details": "home_dashboard.png"
+  },
+  {
+    "title": "Blockdoku game",
+    "repoLink": "https://github.com/Habib-aw/Blockdoku",
+    "startDate": "October 2023",
+    "summary": "The project serves as a game that combines sudoku with blocks hence the name blockdoku. This is a university project used to display concepts I had learned in an object oriented programming module.",
+    "technologies": [{ "icon": "java.svg", "name": "Java" }],
+    "details": "blockdoku.png"
+  }
+]
