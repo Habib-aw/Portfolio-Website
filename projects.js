@@ -31,10 +31,12 @@ function renderProjects(projects) {
     projectElement.innerHTML = `<section class="project-section">
           <div class="title-repo">
             <h2 class="project-title">${project.title}</h2>
-            <h2>Repo:</h2>
-            <a href="${project.repoLink}" class="github-icon" target="_blank">
+            
+            <a href="${project.repoLink}" class="github-icon" target="_blank" class="repo-section">
               <img src="Images/svgs/github.svg" alt="github" srcset="" />
+              <p class="repo-text">Repo</p>
             </a>
+            
           </div>
           <hr />
           <h3>Started: ${project.startDate}</h3>
@@ -59,3 +61,18 @@ function renderProjects(projects) {
   });
 }
 window.onload = fetchProjects;
+const btn = document.querySelector(".to-top");
+
+// Show the button when scrolling down
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    btn.style.display = "flex";
+  } else {
+    btn.style.display = "none";
+  }
+});
+
+// Scroll to the top when the button is clicked
+btn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});

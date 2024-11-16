@@ -479,3 +479,14 @@ form {
 .project-image {
   max-height: 500px;
 }
+.repo-text {
+  font-size: small;
+  text-align: center;
+}
+.repo-section {
+  display: flex;
+  flex-direction: column;
+}
+.title-repo {
+  align-items: center;
+}
