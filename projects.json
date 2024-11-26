@@ -23,7 +23,7 @@
   },
   {
     "title": "App for local Mosque",
-    "repoLink": "https://github.com/Habib-aw/BmaApp",
+    "repoLink": "https://github.com/Habib-aw/bma-app",
     "startDate": "November 2022",
     "summary": "This project aims to provide information to Mosque attendees through an app. Unlike a website, the app is intended to be offline first enabling attendees to view prayer times even when there is no or weak internet connection. The app also aids by alerting users when it is close to prayer time, leaving adjustements to users allowing them to know in advance when it is prayer times. The app also has a donation and contact section enabling attendees to help and commmunicate with the Mosque. This app is a personal project and is currently being used by my local Mosque.",
     "technologies": [{ "icon": "react.svg", "name": "React Native" }],
